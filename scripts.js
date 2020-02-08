@@ -1,7 +1,1 @@
-let userInput;
-userInput = "samosa";
-if ( userInput === "burrito" ) {
-  console.log("Brilliant choice!");
-} else {
-  console.log("Don’t you want a burrito?");
-  }
+console.log("scripts.js has loaded!");
