@@ -1,7 +1,7 @@
-let userInput;
-userInput = prompt("What do you want to have for dinner?", "Type your answer here.");
-if ( userInput === "burrito" ) {
-  $("#response").html("Brilliant choice!");
+let linguistic;
+linguistic = prompt("Is your message linguistic?", "Type yes or no here.");
+if ( linguistic === "yes" ) {
+  $("#response").html("Your message uses text.");
 } else {
-  $("#response").html("Don’t you want a burrito?");
+  $("#response").html("Your message is not linguistic");
 }
