@@ -1,8 +1,7 @@
-$("#response").html("scripts.js has loaded!");
 let userInput;
-userInput = prompt("What do you want to have for dinner?", "Type your answer here.");
+userInput = "samosa";
 if ( userInput === "burrito" ) {
-  $("#response").html("Brilliant choice!");
+  console.log("Brilliant choice!");
 } else {
-  $("#response").html("Don’t you want a burrito?");
-}
+  console.log("Don’t you want a burrito?");
+  }
