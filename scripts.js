@@ -1,39 +1,25 @@
-let linguistic;
-linguistic = prompt("Does your message use text?", "Type yes or no here.");
-if ( linguistic === "yes" ) {
-  $("#response").html("Your message is linguistic.");
-} else {
-  $("#response").html("Your message is not linguistic.");
-}
+let arraySymbolicMessage, arrayConnotedImage, arrayDenotedImage, arrayAnchorage, arrayRelay, arrayPolysemy, arrayLexia, arraySyntagm, arrayParadigm, arrayRhetoricOfTheImage;
 
-let literal;
-literal = prompt("Is your message literal?", "Type yes or no here.");
-if ( literal === "yes" ) {
-  $("#response").html("Your message is denoted.");
-} else {
-  $("#response").html("Your message is not literal.");
-}
+arraySymbolicMessage = [["id", 1], ["term", "<i>Term</i>"], ["definition", "definition"]];
 
-let symbolic;
-symbolic = prompt("Is your message symbolic?", "Type yes or no here.");
-if ( symbolic === "yes" ) {
-  $("#response").html("Your message is connoted.");
-} else {
-  $("#response").html("Your message is not symbolic.");
-}
+arrayConnotedImage = [["id", 2], ["term", "<i>Term</i>"], ["definition", "definition"]];
 
-let anchor;
-anchor = prompt("Does your message use text with the image to create a general meaning?", "Type yes or no here.");
-if ( anchor === "yes" ) {
-  $("#response").html("Your message is anchored.");
-} else {
-  $("#response").html("Your message is not unclear.");
-}
+arrayDenotedImage = [["id", 3], ["term", "<i>Term</i>"], ["definition", "definition"]];
 
-let relay;
-relay = prompt("Does your message use an image and text to convey meaning?", "Type yes or no here.");
-if ( anchor === "yes" ) {
-  $("#response").html("Your message is relayed.");
-} else {
-  $("#response").html("Your message could use some more work.");
-}
+arrayAnchorage = [["id", 4], ["term", "<i>Term</i>"], ["definition", "definition"]];
+
+arrayRelay = [["id", 5], ["term", "<i>Term</i>"], ["definition", "definition"]];
+
+arrayPolysemy = [["id", 6], ["term", "<i>Term</i>"], ["definition", "definition"]];
+
+arrayLexia = [["id", 7], ["term", "<i>Term</i>"], ["definition", "definition"]];
+
+arraySyntagm = [["id", 8], ["term", "<i>Term</i>"], ["definition", "definition"]];
+
+arrayParadigm = [["id", 9], ["term", "<i>Term</i>"], ["definition", "definition"]];
+
+arrayRhetoricOfTheImage = [["id", 10], ["term", "<i>Term</i>"], ["definition", "definition."]];
+
+arrayRhetoricOfTheImageTermDefinition = [arrayRhetoricOfTheImage[1][1], " means ", arrayRhetoricOfTheImage[2][1]];
+
+$("#response").html(arrayRhetoricOfTheImageTermDefinition);

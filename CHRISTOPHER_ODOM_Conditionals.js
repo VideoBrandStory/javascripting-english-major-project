@@ -27,7 +27,7 @@ anchor = prompt("Does your message use text with the image to create a general m
 if ( anchor === "yes" ) {
   $("#response").html("Your message is anchored.");
 } else {
-  $("#response").html("Your message is not unclear.");
+  $("#response").html("Your message is unclear.");
 }
 
 let relay;
