@@ -19,6 +19,6 @@ let arrayParadigm = [["id", 9], ["term", "term"], ["definition", "definition"]];
 
 let arrayRhetoricOfTheImage = [["id", 10], ["term", "term"], ["definition", "definition"]];
 
-$("#response").html(arrayRhetoricOfTheImage[1][1]);
+console.log(arrayRhetoricOfTheImage[1][1]);
 
-$("#response").html(arrayRhetoricOfTheImage[2][1]);
+console.log(arrayRhetoricOfTheImage[2][1]);
