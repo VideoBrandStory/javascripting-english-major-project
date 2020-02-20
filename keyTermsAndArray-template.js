@@ -12,12 +12,12 @@ let arrayPolysemy = [["id", 6], ["term", "term"], ["definition", "definition"]];
 
 let arrayLexia = [["id", 7], ["term", "term"], ["definition", "definition"]];
 
-let arraySyntagm = [["id", 8], ["term", "term"], ["definition", "definition"]];
+let arraySyntagmatic = [["id", 8], ["term", "term"], ["definition", "definition"]];
 
-let arrayParadigm = [["id", 9], ["term", "term"], ["definition", "definition"]];
+let arrayParadigmatic = [["id", 9], ["term", "term"], ["definition", "definition"]];
 
 let arrayRhetoricOfTheImage = [["id", 10], ["term", "term"], ["definition", "definition"]];
 
-$("#response").html(arrayRhetoricOfTheImage[1][1]);
+console.log(arrayRhetoricOfTheImage[1][1]);
 
-$("#response").html(arrayRhetoricOfTheImage[2][1]);
+console.log(arrayRhetoricOfTheImage[2][1]);
