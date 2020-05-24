@@ -1,0 +1,121 @@
+<head> <link rel="stylesheet" type="text/css" href="sheet.css">
+    <script src="scripts/jquery-1.11.2.min.js"></script><script src="scripts/tracery.js"></script> </head>
+<body><p id="generator"></p>
+</body>
+<script>var sample = {
+	"origin": [
+		"#origin1#",
+		"#origin2#",
+		"#origin3#",
+		"#origin4#"
+	],
+	"origin1": [
+		"The linguistic message in an image 🖼️ can be #adjective1# or #adjective2#, and #verb1# denotation, such as #pluralnoun1_denotations#, and #verb2# connotation, such as #noun1_connotation# 🗣️. #image#"
+	],
+	"origin2": [
+		"When an image signifies a lexicon 🔤, it #verb3# a #adjective3# iconic message ✉️. #image#"
+	],
+	"origin3": [
+		"A #adjective4# iconic message of an image 📸 is when the signifier and signified of the image are the same ⚖️. #image#"
+	],
+	"origin4": [
+		"An image's linguistic message may #verb2# in the form of anchorage ⚓ through #noun2#, or in the form of relay that adds text to create #adjective5# meaning with both the image and the text 🧠. #image#"
+	],
+	"adjective1": [
+		"denoted",
+		"literal"
+	],
+	"adjective2": [
+		"connoted",
+		"symbolic"
+	],
+	"verb1": [
+		"articulate",
+		"present",
+		"assemble",
+		"utilize",
+		"communicate",
+		"orientate",
+		"elucidate",
+		"canalize",
+		"naturalize"
+	],
+	"pluralnoun1_denotations": [
+		"captions",
+		"labels",
+		"text",
+		"words",
+		"phrases"
+	],
+	"verb2": [
+		"produce",
+		"describe",
+		"define",
+		"imbue",
+		"",
+		"represent",
+		"imprint",
+		"interpret",
+		"construct",
+		"transmit",
+		"compose"
+	],
+	"noun1_connotation": [
+		"a sign",
+		"articulated language",
+		"",
+		"one message",
+		"an ideology",
+		"an ideolect"
+	],
+	"adjective3": [
+		"coded",
+		"symbolic",
+		"connoted"
+	],
+	"adjective4": [
+		"non-coded",
+		"literal",
+		"denoted"
+	],
+	"noun2": [
+		"multiple signifieds",
+		"polysemy",
+		"a lexia",
+		"symbols",
+		"codes"
+	],
+	"adjective5": [
+		"syntagmatic",
+		"paradigmatic"
+	],
+	"verb3": [
+		"articulates",
+		"presents",
+		"assembles",
+		"utilizes",
+		"communicates",
+		"orientates",
+		"elucidates",
+		"canalizes",
+		"naturalizes"
+	],
+	"image": [
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_01.jpg}",
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_02.jpg}",
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_03.jpg}",
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_04.jpg}",
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_05.jpg}",
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_06.jpg}",
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_07.jpg}",
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_08.jpg}",
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_09.jpg}",
+		"{img http://www.christopherodom.com/wp-content/uploads/2020/04/Roland_Barthes_Semiotics_Bot_10.jpg}"
+	]
+};
+var grammar = tracery.createGrammar(sample);
+var myStory = grammar.flatten("#origin");
+var paragraph = document.createElement("p");
+paragraph.innerHTML = myStory;
+document.getElementById("generator").appendChild(paragraph);
+</script>
